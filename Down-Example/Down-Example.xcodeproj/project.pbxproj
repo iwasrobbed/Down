@@ -15,6 +15,15 @@
 		1466417F218D2A18009627F9 /* Down.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D49980B51FA560F8004EE42E /* Down.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		14954EA521A7DCB9001933C4 /* README-sample.md in Resources */ = {isa = PBXBuildFile; fileRef = 14954EA421A7DCA3001933C4 /* README-sample.md */; };
 		14954EA621A7DCBA001933C4 /* README-sample.md in Resources */ = {isa = PBXBuildFile; fileRef = 14954EA421A7DCA3001933C4 /* README-sample.md */; };
+		6DAF6A1D26665FCA0066FAFD /* Down_SwiftUI_ExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DAF6A1C26665FCA0066FAFD /* Down_SwiftUI_ExampleApp.swift */; };
+		6DAF6A1F26665FCA0066FAFD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DAF6A1E26665FCA0066FAFD /* ContentView.swift */; };
+		6DAF6A2126665FCB0066FAFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DAF6A2026665FCB0066FAFD /* Assets.xcassets */; };
+		6DAF6A2426665FCB0066FAFD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DAF6A2326665FCB0066FAFD /* Preview Assets.xcassets */; };
+		6DAF6A2B2666616D0066FAFD /* DownHTML.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DAF6A2A2666616D0066FAFD /* DownHTML.swift */; };
+		6DAF6A2C266662F90066FAFD /* Down.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D49980B51FA560F8004EE42E /* Down.framework */; };
+		6DAF6A2D266662F90066FAFD /* Down.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D49980B51FA560F8004EE42E /* Down.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6DAF6A2F266665DE0066FAFD /* README-sample.md in Resources */ = {isa = PBXBuildFile; fileRef = 14954EA421A7DCA3001933C4 /* README-sample.md */; };
+		6DAF6A3126666C440066FAFD /* DownAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DAF6A3026666C440066FAFD /* DownAttributedString.swift */; };
 		8A07D7D31F085EC6004D7141 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A07D7D21F085EC6004D7141 /* AppDelegate.swift */; };
 		8A07D7D51F085EC6004D7141 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A07D7D41F085EC6004D7141 /* ViewController.swift */; };
 		8A07D7D81F085EC6004D7141 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A07D7D61F085EC6004D7141 /* Main.storyboard */; };
@@ -53,13 +62,6 @@
 			remoteGlobalIDString = 8AFAEAFB1E6E32E900E09B68;
 			remoteInfo = DownTests;
 		};
-		D4C77E06240EEB64004675B3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D49980AF1FA560F8004EE42E /* Down.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = EEBA153A2344845500B54ECB;
-			remoteInfo = DownSnapshotTests;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -70,6 +72,17 @@
 			dstSubfolderSpec = 10;
 			files = (
 				1466417F218D2A18009627F9 /* Down.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DAF6A2E266662F90066FAFD /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6DAF6A2D266662F90066FAFD /* Down.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -96,6 +109,14 @@
 		14090A542185411A00503C06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14090A5E2185443800503C06 /* macOS Demo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "macOS Demo.entitlements"; sourceTree = "<group>"; };
 		14954EA421A7DCA3001933C4 /* README-sample.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "README-sample.md"; sourceTree = "<group>"; };
+		6DAF6A1A26665FCA0066FAFD /* Down-SwiftUI-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Down-SwiftUI-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DAF6A1C26665FCA0066FAFD /* Down_SwiftUI_ExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Down_SwiftUI_ExampleApp.swift; sourceTree = "<group>"; };
+		6DAF6A1E26665FCA0066FAFD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6DAF6A2026665FCB0066FAFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6DAF6A2326665FCB0066FAFD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6DAF6A2526665FCB0066FAFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DAF6A2A2666616D0066FAFD /* DownHTML.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownHTML.swift; sourceTree = "<group>"; };
+		6DAF6A3026666C440066FAFD /* DownAttributedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownAttributedString.swift; sourceTree = "<group>"; };
 		8A07D7CF1F085EC6004D7141 /* Down-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Down-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A07D7D21F085EC6004D7141 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8A07D7D41F085EC6004D7141 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -112,6 +133,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4591E9C226D293F00EBD476 /* Down.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DAF6A1726665FCA0066FAFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DAF6A2C266662F90066FAFD /* Down.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,6 +183,28 @@
 			path = Shared;
 			sourceTree = "<group>";
 		};
+		6DAF6A1B26665FCA0066FAFD /* Down-SwiftUI-Example */ = {
+			isa = PBXGroup;
+			children = (
+				6DAF6A1C26665FCA0066FAFD /* Down_SwiftUI_ExampleApp.swift */,
+				6DAF6A1E26665FCA0066FAFD /* ContentView.swift */,
+				6DAF6A2026665FCB0066FAFD /* Assets.xcassets */,
+				6DAF6A2526665FCB0066FAFD /* Info.plist */,
+				6DAF6A2226665FCB0066FAFD /* Preview Content */,
+				6DAF6A2A2666616D0066FAFD /* DownHTML.swift */,
+				6DAF6A3026666C440066FAFD /* DownAttributedString.swift */,
+			);
+			path = "Down-SwiftUI-Example";
+			sourceTree = "<group>";
+		};
+		6DAF6A2226665FCB0066FAFD /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				6DAF6A2326665FCB0066FAFD /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 		8A07D7C61F085EC6004D7141 = {
 			isa = PBXGroup;
 			children = (
@@ -161,6 +212,7 @@
 				8A07D7D11F085EC6004D7141 /* Down-Example */,
 				14090A4A2185411800503C06 /* macOS Demo */,
 				14954EA321A7DCA3001933C4 /* Shared */,
+				6DAF6A1B26665FCA0066FAFD /* Down-SwiftUI-Example */,
 				14664175218D264A009627F9 /* Frameworks */,
 				8A07D7D01F085EC6004D7141 /* Products */,
 			);
@@ -171,6 +223,7 @@
 			children = (
 				8A07D7CF1F085EC6004D7141 /* Down-Example.app */,
 				14090A492185411800503C06 /* macOS Demo.app */,
+				6DAF6A1A26665FCA0066FAFD /* Down-SwiftUI-Example.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -193,7 +246,6 @@
 			children = (
 				D49980B51FA560F8004EE42E /* Down.framework */,
 				D49980B71FA560F8004EE42E /* DownTests.xctest */,
-				D4C77E07240EEB64004675B3 /* DownSnapshotTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -218,6 +270,24 @@
 			name = "macOS Demo";
 			productName = "macOS Demo";
 			productReference = 14090A492185411800503C06 /* macOS Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6DAF6A1926665FCA0066FAFD /* Down-SwiftUI-Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DAF6A2926665FCB0066FAFD /* Build configuration list for PBXNativeTarget "Down-SwiftUI-Example" */;
+			buildPhases = (
+				6DAF6A1626665FCA0066FAFD /* Sources */,
+				6DAF6A1726665FCA0066FAFD /* Frameworks */,
+				6DAF6A1826665FCA0066FAFD /* Resources */,
+				6DAF6A2E266662F90066FAFD /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Down-SwiftUI-Example";
+			productName = "Down-SwiftUI-Example";
+			productReference = 6DAF6A1A26665FCA0066FAFD /* Down-SwiftUI-Example.app */;
 			productType = "com.apple.product-type.application";
 		};
 		8A07D7CE1F085EC6004D7141 /* Down-Example */ = {
@@ -245,7 +315,7 @@
 		8A07D7C71F085EC6004D7141 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1000;
+				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = Down;
 				TargetAttributes = {
@@ -259,6 +329,10 @@
 								enabled = 1;
 							};
 						};
+					};
+					6DAF6A1926665FCA0066FAFD = {
+						CreatedOnToolsVersion = 12.5;
+						ProvisioningStyle = Automatic;
 					};
 					8A07D7CE1F085EC6004D7141 = {
 						CreatedOnToolsVersion = 8.3.3;
@@ -287,6 +361,7 @@
 			targets = (
 				8A07D7CE1F085EC6004D7141 /* Down-Example */,
 				14090A482185411800503C06 /* macOS Demo */,
+				6DAF6A1926665FCA0066FAFD /* Down-SwiftUI-Example */,
 			);
 		};
 /* End PBXProject section */
@@ -306,13 +381,6 @@
 			remoteRef = D49980B61FA560F8004EE42E /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		D4C77E07240EEB64004675B3 /* DownSnapshotTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = DownSnapshotTests.xctest;
-			remoteRef = D4C77E06240EEB64004675B3 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -323,6 +391,16 @@
 				14090A502185411A00503C06 /* Assets.xcassets in Resources */,
 				14090A532185411A00503C06 /* Main.storyboard in Resources */,
 				14954EA521A7DCB9001933C4 /* README-sample.md in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DAF6A1826665FCA0066FAFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DAF6A2F266665DE0066FAFD /* README-sample.md in Resources */,
+				6DAF6A2426665FCB0066FAFD /* Preview Assets.xcassets in Resources */,
+				6DAF6A2126665FCB0066FAFD /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,6 +424,17 @@
 			files = (
 				14090A4E2185411800503C06 /* ViewController.swift in Sources */,
 				14090A4C2185411800503C06 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DAF6A1626665FCA0066FAFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DAF6A3126666C440066FAFD /* DownAttributedString.swift in Sources */,
+				6DAF6A1F26665FCA0066FAFD /* ContentView.swift in Sources */,
+				6DAF6A1D26665FCA0066FAFD /* Down_SwiftUI_ExampleApp.swift in Sources */,
+				6DAF6A2B2666616D0066FAFD /* DownHTML.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,6 +540,55 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		6DAF6A2626665FCB0066FAFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Down-SwiftUI-Example/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "Down-SwiftUI-Example/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.downMarkdown..Down-SwiftUI-Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6DAF6A2726665FCB0066FAFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Down-SwiftUI-Example/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "Down-SwiftUI-Example/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.downMarkdown..Down-SwiftUI-Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -617,6 +755,15 @@
 			buildConfigurations = (
 				14090A572185411A00503C06 /* Debug */,
 				14090A582185411A00503C06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DAF6A2926665FCB0066FAFD /* Build configuration list for PBXNativeTarget "Down-SwiftUI-Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DAF6A2626665FCB0066FAFD /* Debug */,
+				6DAF6A2726665FCB0066FAFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

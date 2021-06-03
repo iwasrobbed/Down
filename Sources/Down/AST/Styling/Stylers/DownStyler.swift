@@ -40,10 +40,12 @@ open class DownStyler: Styler {
         .font: fonts.listItemPrefix,
         .foregroundColor: colors.listItemPrefix]
     }
+    
+    private var delegate: AsyncImageLoadDelegate?
 
     // MARK: - Life cycle
 
-    public init(configuration: DownStylerConfiguration = DownStylerConfiguration()) {
+    public init(configuration: DownStylerConfiguration = DownStylerConfiguration(), delegate: AsyncImageLoadDelegate? = nil) {
         fonts = configuration.fonts
         colors = configuration.colors
         paragraphStyles = configuration.paragraphStyles
@@ -52,6 +54,7 @@ open class DownStyler: Styler {
         codeBlockOptions = configuration.codeBlockOptions
         itemParagraphStyler = ListItemParagraphStyler(options: configuration.listItemOptions,
                                                       prefixFont: fonts.listItemPrefix)
+        self.delegate = delegate
     }
 
     // MARK: - Styling
@@ -187,8 +190,9 @@ open class DownStyler: Styler {
     }
 
     open func style(image str: NSMutableAttributedString, title: String?, url: String?) {
-        guard let url = url else { return }
-        styleGenericLink(in: str, url: url)
+        guard let url = url,
+              let urlImg = URL(string: url) else { return }
+        styleGenericImg(in: str, url: urlImg)
     }
 
     // MARK: - Common Styling
@@ -217,6 +221,13 @@ open class DownStyler: Styler {
         str.addAttributes([
             .link: url,
             .foregroundColor: colors.link])
+    }
+    
+    private func styleGenericImg(in str: NSMutableAttributedString, url: URL) {
+        let image1Attachment = AsyncImageLoad(imageURL: url, delegate: delegate)
+        let image1String = NSAttributedString(attachment: image1Attachment)
+        
+        str.setAttributedString(image1String)
     }
 
     // MARK: - Helpers

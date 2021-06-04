@@ -46,6 +46,7 @@ public class ListItemParagraphStyler {
         let style = NSMutableParagraphStyle()
         style.paragraphSpacingBefore = options.spacingAbove
         style.paragraphSpacing = options.spacingBelow
+        style.alignment = options.alignment
         return style
     }
 
@@ -76,7 +77,7 @@ public class ListItemParagraphStyler {
     }
 
     private func tabStop(at location: CGFloat) -> NSTextTab {
-        return NSTextTab(textAlignment: .left, location: location, options: [:])
+        return NSTextTab(textAlignment: options.alignment, location: location, options: [:])
     }
 
 }
